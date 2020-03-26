@@ -1,5 +1,8 @@
-Nome: Jairo Ferreira Gez
-Disciplina: ELC1039 - Programação Paralela
+-Nome: Jairo Ferreira Gez
+-Disciplina: ELC1039 - Programação Paralela
+
+[Especificações da plataforma utilizada(specs)](specs.txt)
+[Dados de execuções dos programas(results)](results.csv)
 
 ## Parte I: Pthreads
 
@@ -130,10 +133,3 @@ Foram ainda enconrados os seguintes speedups para 2 e 4 threads usando OpenMp.
 
 ![2_threads](su2threadsomp.png)
 ![4_threads](su4threadsomp.png)
-
-
-
-
-
-
-
