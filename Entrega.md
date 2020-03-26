@@ -1,8 +1,8 @@
--Nome: Jairo Ferreira Gez
--Disciplina: ELC1039 - Programação Paralela
+*Nome: Jairo Ferreira Gez
+*Disciplina: ELC1039 - Programação Paralela
 
-[Especificações da plataforma utilizada(specs)](specs.txt)
-[Dados de execuções dos programas(results)](results.csv)
+*[Especificações da plataforma utilizada(specs)](specs.txt)
+*[Dados de execuções dos programas(results)](results.csv)
 
 ## Parte I: Pthreads
 
