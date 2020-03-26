@@ -1,9 +1,9 @@
 *Nome: Jairo Ferreira Gez
 *Disciplina: ELC1039 - Programação Paralela
-
+------
 *[Especificações da plataforma utilizada(specs)](specs.txt)
 *[Dados de execuções dos programas(results)](results.csv)
-
+------
 ## Parte I: Pthreads
 
 1. Explique como se encontram implementadas as 4 etapas de projeto: particionamento, comunicação, aglomeração, mapeamento (use trechos de código para ilustrar a explicação).
