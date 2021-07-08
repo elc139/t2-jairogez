@@ -8,13 +8,13 @@
 #include <pthread.h>
 #include <time.h>
 
-typedef struct 
+typedef struct
  {
    double *a;
    double *b;
-   double c; 
+   double c;
    int wsize;
-   int repeat; 
+   int repeat;
  } dotdata_t;
 
 // Variaveis globais, acessiveis por todas threads
@@ -29,7 +29,7 @@ void *dotprod_worker(void *arg)
    int i, k;
    long offset = (long) arg;
    double *a = dotdata.a;
-   double *b = dotdata.b;     
+   double *b = dotdata.b;
    int wsize = dotdata.wsize;
    int start = offset*wsize;
    int end = start + wsize;
@@ -50,7 +50,7 @@ void *dotprod_worker(void *arg)
 }
 
 
-/* 
+/*
  * Distribui o trabalho entre nthreads
  */
 void dotprod_threads(int nthreads)
@@ -78,7 +78,7 @@ void dotprod_threads(int nthreads)
 
 /*
  * Tempo (wallclock) em microssegundos
- */ 
+ */
 long wtime()
 {
    struct timeval t;
@@ -88,9 +88,9 @@ long wtime()
 
 /*
  * Preenche vetor
- */ 
+ */
 void fill(double *a, int size, double value)
-{  
+{
    int i;
    for (i = 0; i < size; i++) {
       a[i] = value;
@@ -99,7 +99,7 @@ void fill(double *a, int size, double value)
 
 /*
  * Funcao principal
- */ 
+ */
 int main(int argc, char **argv)
 {
    int nthreads, wsize, repeat;
@@ -110,7 +110,7 @@ int main(int argc, char **argv)
       exit(EXIT_FAILURE);
    }
 
-   nthreads = atoi(argv[1]); 
+   nthreads = atoi(argv[1]);
    wsize = atoi(argv[2]);  // worksize = tamanho do vetor de cada thread
    repeat = atoi(argv[3]); // numero de repeticoes dos calculos (para aumentar carga)
 
@@ -129,8 +129,8 @@ int main(int argc, char **argv)
    end_time = wtime();
 
    // Mostra resultado e estatisticas da execucao
-   printf("%f\n", dotdata.c);
-   printf("%d thread(s), %ld usec\n", nthreads, (long) (end_time - start_time));
+   //printf("%f\n", dotdata.c);
+   printf("Pthreads, %d, %d, %d, %ld\n", nthreads, wsize, repeat, (long) (end_time - start_time));
    fflush(stdout);
 
    free(dotdata.a);
@@ -138,4 +138,3 @@ int main(int argc, char **argv)
 
    return EXIT_SUCCESS;
 }
-

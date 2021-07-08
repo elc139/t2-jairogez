@@ -1,0 +1,34 @@
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 9.11 (stretch)
+Release:	9.11
+Codename:	stretch
+
+
+MemTotal:        3962796 kB
+
+
+Arquitetura:           x86_64
+Modo(s) operacional da CPU:32-bit, 64-bit
+Ordem dos bytes:       Little Endian
+CPU(s):                4
+Lista de CPU(s) on-line:0-3
+Thread(s) per núcleo: 2
+Núcleo(s) por soquete:2
+Soquete(s):            1
+Nó(s) de NUMA:        1
+ID de fornecedor:      GenuineIntel
+Família da CPU:       6
+Modelo:                61
+Nome do modelo:        Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+Step:                  4
+CPU MHz:               1654.565
+CPU MHz máx.:         2700,0000
+CPU MHz mín.:         500,0000
+BogoMIPS:              4389.50
+Virtualização:       VT-x
+cache de L1d:          32K
+cache de L1i:          32K
+cache de L2:           256K
+cache de L3:           3072K
+CPU(s) de nó0 NUMA:   0-3
+
